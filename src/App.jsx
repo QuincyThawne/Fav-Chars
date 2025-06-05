@@ -13,7 +13,7 @@ function App() {
       {!loaded && <Loader onComplete={() => setLoaded(true)} />}
       {loaded}
     </>
-      <h1 className="title">Anime Character Cards</h1>
+      <h1 className="title">My Favourite Characters</h1>
       <div className="card-grid" style={{ opacity: loaded ? 1 : 0, transition: 'opacity 2s ease' }}
       >
         {characters.map((char, index) => (
